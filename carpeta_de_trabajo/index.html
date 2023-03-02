@@ -111,29 +111,50 @@
   </div>
 
   <script>
-    $(function () {
-     // $("input:last-of-type").hide();
-      //EACH Y EL OBJETO THIS
-     $(".iconized li").each(function(index){
-      console.log(`El elemento ${index} contiene ${$(this).text()}`);
-      if(index%2 == 0){
-        $(this).css("color", "orange");
-      }
+    // $(function () {
+    //  // $("input:last-of-type").hide();
+    //   //EACH Y EL OBJETO THIS
+    //  $(".iconized li").each(function(index){
+    //   console.log(`El elemento ${index} contiene ${$(this).text()}`);
+    //   if(index%2 == 0){
+    //     $(this).css("color", "orange");
+    //   }
 
-     });
-     //SELECCIONAMOS LAS CELDAS QUE TIENEN B
-     $("td:contains(B)").css("color", "green");
-     //CELDAS DE LA PRIMERA COLLUMNA QUE CONTIENEN A
-     $("td:nth-child(1):contains(A)").text("HOLA");
-     //todos los inputs y botones
-     $(":input").css("background", "lightgrey");
-     $("form span").css("background", "lightblue");
+    //   });
+    //  //SELECCIONAMOS LAS CELDAS QUE TIENEN B
+    //  $("td:contains(B)").css("color", "green");
+    //  //CELDAS DE LA PRIMERA COLLUMNA QUE CONTIENEN A
+    //  $("td:nth-child(1):contains(A)").text("HOLA");
+    //  //todos los inputs y botones
+    //  $(":input").css("background", "lightgrey");
+    //  $("form span").css("background", "lightblue");
 
-     //todos los elementos de cabecera
-     $(":header").css("color", "tomato");
+    //  //todos los elementos de cabecera
+    //  $(":header").css("color", "tomato");
      
+    // });
+    $(document).ready(function(){
 
-      
+      //para todos los li de la clase .iconized
+      $(".iconized li").css({
+        "color":"pink",
+        "background":"green"
+      });
+
+      //para el primer li
+      $(".iconized li").eq(0).css({
+        "color": "black",
+        "background":"none"
+      });
+
+      //funciones width() y height()
+      //obtenemos ancho de una imagen
+      var ancho = $("img").eq(4).width();
+      console.log(ancho);
+      //establecemos ancho a una imagen
+      $("img").eq(5).width("20px");
+
+
     });
 
   </script>
