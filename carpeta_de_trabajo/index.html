@@ -113,6 +113,24 @@
   <script>
     $(function () {
      // $("input:last-of-type").hide();
+      //EACH Y EL OBJETO THIS
+     $(".iconized li").each(function(index){
+      console.log(`El elemento ${index} contiene ${$(this).text()}`);
+      if(index%2 == 0){
+        $(this).css("color", "orange");
+      }
+
+     });
+     //SELECCIONAMOS LAS CELDAS QUE TIENEN B
+     $("td:contains(B)").css("color", "green");
+     //CELDAS DE LA PRIMERA COLLUMNA QUE CONTIENEN A
+     $("td:nth-child(1):contains(A)").text("HOLA");
+     //todos los inputs y botones
+     $(":input").css("background", "lightgrey");
+     $("form span").css("background", "lightblue");
+
+     //todos los elementos de cabecera
+     $(":header").css("color", "tomato");
      
 
       
