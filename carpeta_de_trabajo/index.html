@@ -131,28 +131,46 @@
 
     //  //todos los elementos de cabecera
     //  $(":header").css("color", "tomato");
-     
+
     // });
-    $(document).ready(function(){
+    // $(document).ready(function(){
 
-      //para todos los li de la clase .iconized
-      $(".iconized li").css({
-        "color":"pink",
-        "background":"green"
+    //   //para todos los li de la clase .iconized
+    //   $(".iconized li").css({
+    //     "color":"pink",
+    //     "background":"green"
+    //   });
+
+    //   //para el primer li
+    //   $(".iconized li").eq(0).css({
+    //     "color": "black",
+    //     "background":"none"
+    //   });
+
+    //   //funciones width() y height()
+    //   //obtenemos ancho de una imagen
+    //   var ancho = $("img").eq(4).width();
+    //   console.log(ancho);
+    //   //establecemos ancho a una imagen
+    //   $("img").eq(5).width("20px");
+    // });
+    //Trabajamos con clases
+    $(document).ready(function () {
+      $("tbody td:nth-child(2)").eq(0).addClass("celda_destacada");
+
+      $("section").addClass(function (index) {
+        return "section " + index;
       });
 
-      //para el primer li
-      $(".iconized li").eq(0).css({
-        "color": "black",
-        "background":"none"
+      $("section").removeClass(function (index) {
+        return "section " + index;
       });
+      $("tbody tr:first td").addClass("celda_destacada");
+      if ($("tbody tr:first td").hasClass("celda_destacada")) {
+        alert("Hay elementos destacados");
+      }
 
-      //funciones width() y height()
-      //obtenemos ancho de una imagen
-      var ancho = $("img").eq(4).width();
-      console.log(ancho);
-      //establecemos ancho a una imagen
-      $("img").eq(5).width("20px");
+
 
 
     });

@@ -394,3 +394,8 @@ fieldset {
 .nueva_clase {
   font-size: 2rem;
 }
+
+.celda_destacada{
+  background-color: red;
+  color: white;
+}
