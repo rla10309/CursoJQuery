@@ -53,6 +53,14 @@ thead tr {
   color: #fff;
   font-size: 1.5rem;
 }
+.color {
+  background-color: tomato;
+  color: white;
+}
+.nueva_clase{
+  font-size: 2rem;
+}
+
 
 tbody tr {
   border-bottom: 0.2rem solid #333;

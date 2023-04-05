@@ -111,18 +111,49 @@
   </div>
   <!-- <script src="js/ejercicios.js"></script> -->
   <script>
-    $(function () {
-      $("ul.iconized").html(function(index, oldtext) {
-        $(this).html(oldtext + "<li>NUEVO</li>");
+    $(document).ready(function () {
+      
+      //cambiar el color de la primera celda de cada fila
+      $("tbody tr td:first-child, tbody tr td:last-child").addClass("color");
+
+      //cambiar todas las imágenes con el logo de openwebinars
+      $("img").attr("src", "./img/jquery.png");
+      $(".card").css("background-color", "pink");
+
+      //añadir 10 lineas al final de la tabla
+      for(var i=1;i<=10;i++){
+        $("table tbody").append("<tr><td>" + i + "</td><td>" + i + "</td><td>" + i + "</td></tr>");
+      }
+
+      //convierte el campo de contraseña en un campo fecha
+      $(":password").attr("type", "date");
+
+      //establece valores por defecto en los campos del formulario
+      $("input").eq(0).val("Tu nombre");
+      $("input").eq(1).attr("type", "text").val("Otro nombre");
+
+      //cambiar en una sola línea los estilos de las cabecers h*
+      $(":header").css({
+        "color":"red",
+        "background-color":"blue",
+        "margin":"0"
       });
 
+      //añadir índice a los elementos de la lista respetando el contenido
+      $(".iconized li").html(function(index, texto){
+        return texto+ "---" + index;
+      });
 
+      //envolver todos los elementos de la tabla con un div
+      $("td").wrapInner("<div></div>");
 
+      //darle al div anterior una clase que produzca un cambio en los estilos
+      $("td > div").addClass("nueva_clase");
 
     });
+  
 
-
-
+    
   </script>
 
 </body>

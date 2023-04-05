@@ -1,0 +1,16 @@
+*{box-sizing: border-box;}
+
+.zona {
+    background-color: green;
+    border: 1px solid black;
+    height: 150px;
+    margin: 20px auto;
+    width: 80%;
+}
+.hijo {
+    background-color: grey;
+    border: 1px solid black;
+    height: 100px;
+    margin: 25px auto;
+    width: 80%;
+}
