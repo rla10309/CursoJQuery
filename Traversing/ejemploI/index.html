@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">/
+    <title>Ejemplo Traversing</title>
+    <script src="js/jquery-3.6.3.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Alumno</th>
+                    <th>Examen1</th>
+                    <th>Examen2</th>
+                    <th>Examen3</th>
+                    <th>Nota Evaluación</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="name">Pepe Pérez</td>
+                    <td>5</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td class="grade"></td>
+                </tr>
+                <tr>
+                    <td class="name">Ana Ramírez</td>
+                    <td>6</td>
+                    <td>3</td>
+                    <td>5</td>
+                    <td class="grade"></td>
+                </tr>
+                <tr>
+                    <td class="name">Rosa Torres</td>
+                    <td>9</td>
+                    <td>3</td>
+                    <td>9</td>
+                    <td class="grade"></td>
+                </tr>
+                <tr>
+                    <td class="name">Sara Gallardo</td>
+                    <td>8</td>
+                    <td>8</td>
+                    <td>6</td>
+                    <td class="grade"></td>
+                </tr>
+            </tbody>
+        </table>
+        <p>
+            <button id="find">SELECCIONAR PRIMERA COLUMNA - FIND</button>
+            <button id="filter">SELECCIONAR ÚLTIMA COLUMNA -FILTER</button>
+        </p>
+        <p>
+            <label>COLUMNA DE INICIO</label>
+            <input type="number" id="start"/>
+            <label for="">COLUMNA FINAL</label>
+            <input type="number" id="end"/>
+            <button id="slice">RANGO COLUMNAS</button>
+        </p>
+        <p>
+            <button id="reset">RESET</button>
+        </p>
+    </div>
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
