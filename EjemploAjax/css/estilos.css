@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.output, .profile {
+    border: 1px solid black;
+    float: left;
+    min-height: 300px;
+    overflow-y: auto;
+    width: 50%;
+}
+
+.profile {
+    padding: 2rem;
+}
+.output ul{
+    float: left;
+    width: 50%;
+}
+.elemento {
+    list-style:none;
+}
+.oculto{
+    display:none;
+}
+.selected {
+    background-color: red;
+    color: white;
+}

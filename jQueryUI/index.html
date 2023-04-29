@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Menu - Default functionality</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <link rel="stylesheet" href="css/estilos.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script src="js/script.js"></script>
+
+</head>
+
+<body>
+
+  <section class="container">
+    <div class="menu">
+      <ul id="menu">
+        <li class="ui-state-disabled">
+          <div>Big data</div>
+        </li>
+        <li>
+          <div>Drupal</div>
+        </li>
+        <li>
+          <div>Management</div>
+        </li>
+        <li>
+          <div>Cloud computing</div>
+          <ul>
+            <li class="ui-state-disabled">
+              <div>Azure</div>
+            </li>
+            <li>
+              <div>GCE</div>
+            </li>
+            <li>
+              <div>AWS</div>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <div>Certificaciones oficiales</div>
+        </li>
+        <li>
+          <div>FrontEnd</div>
+          <ul>
+            <li>
+              <div>Rock</div>
+              <ul>
+                <li>
+                  <div>Alternative</div>
+                </li>
+                <li>
+                  <div>Classic</div>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <div>Jazz</div>
+              <ul>
+                <li>
+                  <div>Freejazz</div>
+                </li>
+                <li>
+                  <div>Big Band</div>
+                </li>
+                <li>
+                  <div>Modern</div>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <div>Pop</div>
+            </li>
+          </ul>
+        </li>
+
+      </ul>
+      <p>
+        <button id="showDialog" class="ui-button">Mostrar Diálogo</button>
+      </p>
+    </div>
+
+    <section class="tabs">
+      <div id="tabs">
+        <ul>
+          <li><a href="#tabs-1">Pestaña 1</a></li>
+          <li><a href="#tabs-2">Pestaña 2</a></li>
+          <li><a href="#tabs-3">Checkboxgroup</a></li>
+          <li><a href="#tabs-4">Accordion</a></li>
+        </ul>
+        <div id="tabs-1">
+          <p>
+          <h1>Contenido de la pestaña1</h1>
+          </p>
+          <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin
+            mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus
+            auctor risus. Aenean tempor ullamcorper leo.</p>
+        </div>
+        <div id="tabs-2">
+          <p>
+          <h2>Contenido de la pestaña 2</h2>
+          </p>
+          <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc.
+            Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut
+            tempus eros massa ut dolor. Aenean aliquet fringilla sem.</p>
+        </div>
+        <div id="tabs-3">
+
+          <p>
+          <h1>Contenido de la pestaña 3</h1>
+          </p>
+          <fieldset>
+            <legend>Seleccionar un plan: </legend>
+            <label for="radio-1">Plan mensual</label>
+            <input type="radio" name="radio-1" id="radio-1">
+            <label for="radio-2">Plan anual</label>
+            <input type="radio" name="radio-1" id="radio-2">
+            <label for="radio-3">Cupón de descuento</label>
+            <input type="radio" name="radio-1" id="radio-3">
+          </fieldset>
+        </div>
+        <div id="tabs-4">
+          <p>
+          <h1>Contenido de la pestaña 4</h1>
+          </p>
+          <div id="accordion">
+            <h3>Section 1</h3>
+            <div>
+              <p>
+                Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+                ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+                amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+                odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+              </p>
+            </div>
+            <h3>Section 2</h3>
+            <div>
+              <p>
+                Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+                purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+                velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+                suscipit faucibus urna.
+              </p>
+            </div>
+            <h3>Section 3</h3>
+            <div>
+              <p>
+                Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+                Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+                ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+                lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+              </p>
+              <ul>
+                <li>List item one</li>
+                <li>List item two</li>
+                <li>List item three</li>
+              </ul>
+            </div>
+            <h3>Section 4</h3>
+            <div>
+              <p>
+                Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+                et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+                faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+                mauris vel est.
+              </p>
+              <p>
+                Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+                Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                inceptos himenaeos.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+
+    </section>
+
+
+
+
+    <div id="dialog" title="Basic dialog">
+      <p>This is an animated dialog which is useful for displaying information. The dialog window can be moved, resized
+        and closed with the &apos;x&apos; icon.</p>
+    </div>
+    </div>
+  </section>
+
+
+</body>
+
+</html>
